@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Iconic Architects | Luxury Architecture & Interior Design Studio</title>
+  <meta name="description" content="The Iconic Architects is an award-winning international architecture and interior design practice creating timeless, high-end editorial spaces." />
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="/src/style.css" />
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR (LOGO ON TOP, NAV BAR BELOW)
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <!-- Top Row: Centered Brand Logo & Actions -->
+      <div class="nav-top-row">
+        <div class="nav-top-placeholder"></div>
+        <a href="#hero" class="logo-brand">
+          <div class="logo-symbol">IA</div>
+          <div class="logo-text">The Iconic <span>Architects</span></div>
+        </a>
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+            <i data-lucide="moon" id="themeIcon"></i>
+          </button>
+          <a href="#contact" class="btn btn-primary btn-nav">Book Consultation</a>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Mobile Menu">
+            <i data-lucide="menu" id="menuIcon"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Navigation menu bar sitting directly below logo -->
+      <nav class="nav-bottom-row" id="navBottomRow">
+        <ul class="nav-links">
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#estimator" class="nav-link">Cost Estimator</a></li>
+          <li><a href="#testimonials" class="nav-link">Press</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO REEL SHOWCASE
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-slider" id="heroSlider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <img src="/assets/hero_1.png" alt="Obsidian Cantilever Cliffside Villa" class="hero-slide-bg" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <img src="/assets/hero_2.png" alt="Titanium Geometric Skyscraper Atrium" class="hero-slide-bg" />
+      </div>
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <img src="/assets/project_res_1.png" alt="Alpine Pine Forest Residence" class="hero-slide-bg" />
+      </div>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <i data-lucide="compass" style="width: 16px; height: 16px;"></i>
+          International Architectural Practice
+        </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Architectural Precision. <br /><span class="editorial-text accent-text">Timeless Atmosphere.</span>
+        </h1>
+        <p class="hero-description reveal reveal-delay-2">
+          We sculpt spaces where structural innovation meets emotional permanence. Creating world-class luxury residences, corporate headquarters, and interior sanctuaries.
+        </p>
+        <div class="hero-cta-group reveal reveal-delay-3">
+          <a href="#portfolio" class="btn btn-primary">
+            Explore Portfolio <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+          </a>
+          <a href="#estimator" class="btn btn-secondary">
+            Project Estimator <i data-lucide="calculator" style="width: 18px; height: 18px;"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats Bar in natural responsive flex flow -->
+      <div class="hero-stats-bar">
+        <div class="stats-grid glass-card">
+          <div class="stat-item">
+            <span class="stat-number" data-target="145">0</span>
+            <span class="stat-label">Global Awards</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="24000" data-prefix="₹" data-suffix=" Cr">0</span>
+            <span class="stat-label">Constructed Value</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="180">0</span>
+            <span class="stat-label">Completed Landmarks</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="22">0</span>
+            <span class="stat-label">Countries Active</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Dots Nav -->
+    <div class="slider-nav" id="sliderNav">
+      <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       STUDIO PHILOSOPHY
+       ========================================================================== -->
+  <section class="section-padding" id="philosophy">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Design Philosophy</span>
+        <h2 class="section-title">Architecture as <span class="editorial-text accent-text">Living Sculpture</span></h2>
+        <p class="section-subtitle">
+          Every project is conceived as a bespoke dialogue between geography, sunlight, and human sensation.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card service-card reveal reveal-delay-1">
+          <span class="service-number">01</span>
+          <h3 class="service-title">Contextual Harmony</h3>
+          <p class="service-desc">
+            We honor the landscape. Structures emerge naturally from their environment, utilizing raw basalt, charred timber, and high-performance glass.
+          </p>
+        </div>
+        <div class="glass-card service-card reveal reveal-delay-2">
+          <span class="service-number">02</span>
+          <h3 class="service-title">Parametric Mastery</h3>
+          <p class="service-desc">
+            Leveraging computational design and advanced structural engineering to craft complex, light-filled spaces previously thought impossible.
+          </p>
+        </div>
+        <div class="glass-card service-card reveal reveal-delay-3">
+          <span class="service-number">03</span>
+          <h3 class="service-title">Emotional Interiors</h3>
+          <p class="service-desc">
+            Interiors are treated not as decoration, but as intimate spatial choreography—rich in tactile materials, quiet acoustics, and shadow play.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ARCHITECTURAL SERVICES
+       ========================================================================== -->
+  <section class="section-padding" id="services" style="background-color: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Core Disciplines</span>
+        <h2 class="section-title">Our Architectural <span class="editorial-text accent-text">Services</span></h2>
+        <p class="section-subtitle">
+          End-to-end design & masterplanning services tailored for high-net-worth private clients and global corporate developers.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card service-card reveal reveal-delay-1">
+          <i data-lucide="building-2" style="width: 32px; height: 32px; color: var(--accent-bronze);"></i>
+          <h3 class="service-title">Luxury Residential & Commercial Architecture</h3>
+          <p class="service-desc">
+            From cliffside estates to high-rise corporate towers, we deliver complete schematic design, structural engineering, and site execution.
+          </p>
+        </div>
+
+        <div class="glass-card service-card reveal reveal-delay-2">
+          <i data-lucide="sofa" style="width: 32px; height: 32px; color: var(--accent-bronze);"></i>
+          <h3 class="service-title">Bespoke Interior Architecture</h3>
+          <p class="service-desc">
+            Custom spatial joinery, rare stone sourcing, acoustic choreography, and handcrafted bronze detailing for penthouse and estate interiors.
+          </p>
+        </div>
+
+        <div class="glass-card service-card reveal reveal-delay-3">
+          <i data-lucide="box" style="width: 32px; height: 32px; color: var(--accent-bronze);"></i>
+          <h3 class="service-title">3D Parametric VR Modeling</h3>
+          <p class="service-desc">
+            Immersive virtual reality walkthroughs, real-time lighting simulations, and ultra-high definition 3D renders prior to ground-breaking.
+          </p>
+        </div>
+
+        <div class="glass-card service-card reveal reveal-delay-1">
+          <i data-lucide="landmark" style="width: 32px; height: 32px; color: var(--accent-bronze);"></i>
+          <h3 class="service-title">Urban Masterplanning & Resorts</h3>
+          <p class="service-desc">
+            Large-scale sustainable urban planning, eco-resort masterplans, and public cultural infrastructure designed to LEED/BREEAM standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FILTERABLE PORTFOLIO GALLERY
+       ========================================================================== -->
+  <section class="section-padding" id="portfolio" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Featured Works</span>
+        <h2 class="section-title">Selected Portfolio & <span class="editorial-text accent-text">Architectural Renders</span></h2>
+        <p class="section-subtitle">
+          Explore our portfolio of minimalist residences, high-density commercial towers, and editorial interior spaces.
+        </p>
+      </div>
+
+      <!-- Portfolio Filter Buttons -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="interior">Interiors</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Project Item 1 -->
+        <article class="project-card reveal" data-category="residential" data-id="p1">
+          <div class="project-image-wrapper">
+            <span class="project-badge">Residential</span>
+            <img src="/assets/hero_1.png" alt="Obsidian Cantilever Villa" class="project-image" />
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Amalfi Coast, Italy</span>
+              <span>2025</span>
+            </div>
+            <h3 class="project-title">Obsidian Cliffside Villa</h3>
+            <div class="project-specs-row">
+              <span><i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> 14,200 sq.ft</span>
+              <span><i data-lucide="award" style="width: 14px; height: 14px;"></i> LEED Platinum</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Item 2 -->
+        <article class="project-card reveal reveal-delay-1" data-category="commercial" data-id="p2">
+          <div class="project-image-wrapper">
+            <span class="project-badge">Commercial</span>
+            <img src="/assets/hero_2.png" alt="Titanium Skyscraper Atrium" class="project-image" />
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Tokyo, Japan</span>
+              <span>2024</span>
+            </div>
+            <h3 class="project-title">Aether Financial Tower</h3>
+            <div class="project-specs-row">
+              <span><i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> 480,000 sq.ft</span>
+              <span><i data-lucide="layers" style="width: 14px; height: 14px;"></i> 54 Floors</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Item 3 -->
+        <article class="project-card reveal reveal-delay-2" data-category="residential" data-id="p3">
+          <div class="project-image-wrapper">
+            <span class="project-badge">Residential</span>
+            <img src="/assets/project_res_1.png" alt="Alpine Pine Forest Residence" class="project-image" />
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Swiss Alps, Switzerland</span>
+              <span>2025</span>
+            </div>
+            <h3 class="project-title">The Alpine Sanctuary</h3>
+            <div class="project-specs-row">
+              <span><i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> 9,800 sq.ft</span>
+              <span><i data-lucide="sun" style="width: 14px; height: 14px;"></i> Net Zero Energy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Item 4 (Interior) -->
+        <article class="project-card reveal" data-category="interior" data-id="p4">
+          <div class="project-image-wrapper">
+            <span class="project-badge">Interior</span>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Penthouse Lounge" class="project-image" />
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Manhattan, New York</span>
+              <span>2024</span>
+            </div>
+            <h3 class="project-title">Tribeca Sky Penthouse</h3>
+            <div class="project-specs-row">
+              <span><i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> 6,500 sq.ft</span>
+              <span><i data-lucide="sparkles" style="width: 14px; height: 14px;"></i> Custom Italian Marble</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Item 5 (Commercial) -->
+        <article class="project-card reveal reveal-delay-1" data-category="commercial" data-id="p5">
+          <div class="project-image-wrapper">
+            <span class="project-badge">Commercial</span>
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Biophilic Corporate Atrium" class="project-image" />
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Milan, Italy</span>
+              <span>2025</span>
+            </div>
+            <h3 class="project-title">Karisma Cultural Center</h3>
+            <div class="project-specs-row">
+              <span><i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> 120,000 sq.ft</span>
+              <span><i data-lucide="trees" style="width: 14px; height: 14px;"></i> Biophilic Atrium</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Item 6 (Interior) -->
+        <article class="project-card reveal reveal-delay-2" data-category="interior" data-id="p6">
+          <div class="project-image-wrapper">
+            <span class="project-badge">Interior</span>
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Minimalist Zen Residence" class="project-image" />
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Kyoto, Japan</span>
+              <span>2024</span>
+            </div>
+            <h3 class="project-title">Zen Meditation Pavilion</h3>
+            <div class="project-specs-row">
+              <span><i data-lucide="maximize-2" style="width: 14px; height: 14px;"></i> 4,200 sq.ft</span>
+              <span><i data-lucide="shield-check" style="width: 14px; height: 14px;"></i> Cedar & Shoji Glass</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE PROJECT LIGHTBOX MODAL (<dialog>)
+       ========================================================================== -->
+  <dialog id="projectModal" aria-labelledby="modalProjectTitle">
+    <div class="modal-header">
+      <div class="modal-title-wrap">
+        <h3 id="modalProjectTitle">Project Title</h3>
+        <span class="modal-project-category" id="modalProjectCategory">Category</span>
+      </div>
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+        <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <!-- Media Viewport -->
+      <div class="modal-media-viewport">
+        <img id="modalProjectImage" src="" alt="Project view" class="modal-image" />
+      </div>
+
+      <!-- Details Column -->
+      <div class="modal-details">
+        <div class="modal-specs-grid">
+          <div class="spec-box">
+            <span class="spec-box-label">Location</span>
+            <p class="spec-box-value" id="modalLocation">Location</p>
+          </div>
+          <div class="spec-box">
+            <span class="spec-box-label">Year Completed</span>
+            <p class="spec-box-value" id="modalYear">Year</p>
+          </div>
+          <div class="spec-box">
+            <span class="spec-box-label">Surface Area</span>
+            <p class="spec-box-value" id="modalArea">Area</p>
+          </div>
+          <div class="spec-box">
+            <span class="spec-box-label">Rating / Certification</span>
+            <p class="spec-box-value" id="modalRating">LEED Platinum</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.75rem;">Design Narrative</h4>
+          <p class="modal-narrative" id="modalNarrative">
+            Detailed architectural breakdown describing context, materials, structural engineering solutions, and interior light choreography.
+          </p>
+        </div>
+
+        <div style="margin-top: auto; display: flex; gap: 1rem;">
+          <a href="#contact" class="btn btn-primary" style="width: 100%;" id="modalConsultBtn">
+            Inquire About Similar Project <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
+       ARCHITECTURAL PROJECT COST & SCOPE ESTIMATOR (INR ₹ / Cr Currency)
+       ========================================================================== -->
+  <section class="section-padding" id="estimator">
+    <div class="container">
+      <div class="estimator-wrapper">
+        <div class="section-header reveal" style="margin-bottom: 2rem;">
+          <span class="section-tag">Interactive Calculator</span>
+          <h2 class="section-title">Architectural Project <span class="editorial-text accent-text">Cost Estimator</span></h2>
+          <p class="section-subtitle">
+            Configure your project parameters to calculate a ballpark investment estimate in INR (₹ Crore), design schedule, and scope parameters.
+          </p>
+        </div>
+
+        <div class="estimator-grid">
+          <!-- Inputs -->
+          <div class="estimator-form reveal reveal-delay-1">
+            <div class="form-group">
+              <label class="form-label" for="estProjectType">Project Typology</label>
+              <select id="estProjectType" class="form-select">
+                <option value="residential_villa">Private Luxury Villa (Residential)</option>
+                <option value="commercial_hq">Corporate HQ / Commercial Tower</option>
+                <option value="luxury_interior">Luxury Interior Architecture</option>
+                <option value="masterplan">Urban Masterplan & Resort</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <div class="range-value-display">
+                <label class="form-label" for="estSquareFeet">Gross Floor Area</label>
+                <span id="sfDisplay">10,000 sq. ft.</span>
+              </div>
+              <input type="range" id="estSquareFeet" min="2000" max="50000" step="1000" value="10000" class="range-slider" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="estFinishTier">Architectural Finish & Specification Tier</label>
+              <select id="estFinishTier" class="form-select">
+                <option value="ultra_bespoke">Ultra Bespoke (Handcrafted Stone, Custom Bronze, Passivhaus)</option>
+                <option value="high_end">High-End Modern (Glass Curtains, Imported Timber, Smart Automation)</option>
+                <option value="editorial">Editorial Minimalist (Monolithic Concrete, Custom Joinery)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Result Card -->
+          <div class="estimator-result-card reveal reveal-delay-2">
+            <div>
+              <span class="section-tag" style="font-size: 0.75rem;">Estimated Investment Range</span>
+              <div class="estimate-price-tag" id="estimatePrice">₹12.5 Cr - ₹16.2 Cr</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">
+                *Includes full schematic design, structural engineering, 3D visualization, and site supervision.
+              </p>
+            </div>
+
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                <span style="color: var(--text-secondary);">Design Phase Timeline:</span>
+                <span style="font-weight: 700; color: var(--accent-bronze);" id="estTimeline">6 - 10 Months</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                <span style="color: var(--text-secondary);">Sustainability Rating Target:</span>
+                <span style="font-weight: 700; color: var(--text-primary);">LEED Gold / Platinum</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" id="applyEstimateBtn" style="width: 100%;">
+              Apply Estimate To Inquiry Form <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS & PRESS
+       ========================================================================== -->
+  <section class="section-padding" id="testimonials" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Critical Acclaim</span>
+        <h2 class="section-title">Press & <span class="editorial-text accent-text">Client Testimonials</span></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="glass-card testimonial-card reveal reveal-delay-1">
+          <i data-lucide="quote" class="quote-icon" style="width: 32px; height: 32px;"></i>
+          <p class="testimonial-text">
+            "The Iconic Architects redefined what modern living feels like. Their mastery over spatial light and unyielding commitment to material purity created a masterpiece."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Elena Vance" class="author-avatar" />
+            <div>
+              <div class="author-name">Elena Vance</div>
+              <div class="author-role">Client, Obsidian Cliffside Villa</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card reveal reveal-delay-2">
+          <i data-lucide="quote" class="quote-icon" style="width: 32px; height: 32px;"></i>
+          <p class="testimonial-text">
+            "An extraordinary vision that seamlessly merges structural innovation with high-end editorial elegance. A landmark achievement in contemporary design."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Architectural Digest Review" class="author-avatar" />
+            <div>
+              <div class="author-name">Architectural Digest</div>
+              <div class="author-role">Design Critique Feature</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card reveal reveal-delay-3">
+          <i data-lucide="quote" class="quote-icon" style="width: 32px; height: 32px;"></i>
+          <p class="testimonial-text">
+            "Working with their team was seamless. The precision of their 3D renderings and execution exceeded every expectation we held for our corporate headquarters."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Marcus Sterling" class="author-avatar" />
+            <div>
+              <div class="author-name">Marcus Sterling</div>
+              <div class="author-role">CEO, Aether Global Holdings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INQUIRY CONSULTATION FORM
+       ========================================================================== -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Office Info -->
+        <div class="reveal">
+          <div class="section-header" style="margin-bottom: 2rem;">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Initiate a <span class="editorial-text accent-text">Commission</span></h2>
+            <p class="section-subtitle">
+              Whether you are planning a private luxury estate, a commercial landmark, or bespoke interior architecture, our studio is available worldwide.
+            </p>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <div class="office-card">
+              <i data-lucide="map-pin" style="color: var(--accent-bronze); width: 24px; height: 24px;"></i>
+              <div>
+                <h4 style="font-size: 1rem; color: var(--text-primary);">Mumbai Studio</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">BKC Financial Center, Level 14, Mumbai 400051</p>
+              </div>
+            </div>
+            <div class="office-card">
+              <i data-lucide="map-pin" style="color: var(--accent-bronze); width: 24px; height: 24px;"></i>
+              <div>
+                <h4 style="font-size: 1rem; color: var(--text-primary);">New Delhi Studio</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Golf Course Road, DLF Phase 5, Gurugram 122002</p>
+              </div>
+            </div>
+            <div class="office-card">
+              <i data-lucide="mail" style="color: var(--accent-bronze); width: 24px; height: 24px;"></i>
+              <div>
+                <h4 style="font-size: 1rem; color: var(--text-primary);">Direct Inquiries</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">commissions@theiconicarchitects.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="glass-card reveal reveal-delay-1" style="padding: 3rem;">
+          <form id="inquiryForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem;">Consultation Inquiry</h3>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="formName">Full Name *</label>
+                <input type="text" id="formName" class="form-input" placeholder="e.g. Vikramaditya Singh" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="formEmail">Email Address *</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="vikram@estate.in" required />
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="formProject">Project Type</label>
+                <select id="formProject" class="form-select">
+                  <option value="residential">Residential Villa</option>
+                  <option value="commercial">Commercial Tower / HQ</option>
+                  <option value="interior">Interior Architecture</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="formBudget">Estimated Budget Tier (INR)</label>
+                <input type="text" id="formBudget" class="form-input" placeholder="₹5 Cr - ₹25 Cr" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="formMessage">Project Vision & Location</label>
+              <textarea id="formMessage" class="form-textarea" rows="4" placeholder="Describe the location, site parameters, and desired architectural vibe..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Commission Inquiry <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#hero" class="logo-brand" style="margin-bottom: 1.25rem;">
+            <div class="logo-symbol">IA</div>
+            <div class="logo-text">The Iconic <span>Architects</span></div>
+          </a>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); max-width: 320px;">
+            An international architectural studio dedicated to structural innovation, emotional interior atmosphere, and timeless design.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#estimator">Cost Estimator</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Global Studios</h4>
+          <ul class="footer-links">
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">New Delhi</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Dubai</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Architectural Journal</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Subscribe to our quarterly editorial journal featuring unseen 3D renders and monographs.
+          </p>
+          <form id="newsletterForm" style="display: flex; gap: 0.5rem;">
+            <input type="email" placeholder="Enter your email" class="form-input" style="padding: 0.6rem 1rem;" required />
+            <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1rem;">
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Iconic Architects Inc. All rights reserved.</p>
+        <p style="font-family: var(--font-heading); letter-spacing: 0.1em; text-transform: uppercase;">
+          Precision &bull; Atmosphere &bull; Innovation
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
